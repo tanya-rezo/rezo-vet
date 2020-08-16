@@ -20,6 +20,16 @@ body {
     font-weight: normal;
 }
 
+ .nav-btn {
+    width: 132px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 18px;
+    text-align: center;
+    background-color: #FFFDF8;
+    border-color: #FFFDF8;
+}
+
 .btn-primary {
     color: #3D3A3A;
     background-color: #FFFDF8;
