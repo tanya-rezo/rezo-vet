@@ -1,0 +1,134 @@
+.brand-vetclinic {
+    font-weight: 400;
+    margin-left: 24px;
+}
+
+.header-btn {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+body {
+    background: linear-gradient(180deg, #EAE9E8 0%, #EAE9E8 53.65%, #B4B4B4 100%);
+}
+
+.vet-big-text {
+    font-weight: 350;
+}
+
+.vet-big-text-rezo {
+    font-weight: normal;
+}
+
+ .nav-btn {
+    width: 132px;
+    height: 36px;
+    font-size: 18px;
+    border-radius: 18px;
+    text-align: center;
+    background-color: #FFFDF8;
+    border-color: #FFFDF8;
+}
+
+.btn-primary {
+    color: #3D3A3A;
+    background-color: #FFFDF8;
+    border-color: #FFFDF8;
+}
+
+.space-75 {
+    height: 75px;
+}
+
+.space-22 {
+    height: 22px;
+}
+
+.space-248 {
+    height: 248px;
+}
+
+.vet-feature-text {
+    font-weight: 300;
+    margin-top: 26px;
+}
+
+.vet-button {
+    width: 300px;
+    height: 48px;
+    margin-top: 126px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    padding-top: 9px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.vet-find-clinic-link {
+    color: black;
+    text-decoration: underline;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.vet-map-pin {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.cont-text {
+    margin-bottom: 0px;
+}
+
+.cont-map {
+    margin-top: 13px;
+}
+.cont-search-btn {
+    width: 115px;
+}
+
+.cont-search-field {
+    width: 980px !important;
+    margin-right: 12px;
+}
+
+.cont-doggo {
+    position: absolute;
+    right: 690px;
+    height: 230px;
+    top: 199px;
+    z-index: 1;
+    transform: scaleX(-1);
+}
+
+.vet-doggo-cato {
+    margin-left: -100px;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.app-btn {
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.error-btn{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 130px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}

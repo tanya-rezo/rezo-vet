@@ -1,0 +1,33 @@
+<% var data = {
+  title: "Ветклиника Резо",
+}; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm">
+          <div class="space-75"></div>
+          <h1>
+              <span class="vet-big-text">Ветеринарная клиника</span> 
+              <span class="vet-big-text-rezo"> Резо</span>
+          </h1>
+          <h3 class="vet-feature-text ">386 клиник по России</h3>
+          <h3 class="vet-feature-text ">Широкий спектр услуг</h3>
+          <h3 class="vet-feature-text ">Высококлассные специалисты</h3>
+          <h3 class="vet-feature-text ">Круглосуточный коллцентр</h3>
+
+          <a role="button" class="btn btn-primary vet-button" href="appointment.html">Записаться</a>
+          <div>
+              <img class="vet-map-pin" src="img/pin.svg">
+              <a class="vet-find-clinic-link" href="contacts.html">Найти ближайшую клинику</a>
+          </div>
+          
+      </div>
+      <div class="col-sm">
+          <div class="space-75"></div>
+          <img class="vet-doggo-cato" src="img/vet-doggo-cato.png">
+      </div>
+  </div>
+</div>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>
