@@ -1,3 +1,15 @@
+html {
+    height: 100%;
+  }
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #EAE9E8 0%, #EAE9E8 53.65%, #B4B4B4 100%);
+    font-family: $font-stack;
+}
+
 .brand-vetclinic {
     font-weight: 400;
     margin-left: 24px;
@@ -6,18 +18,6 @@
 .header-btn {
     font-size: 18px;
     line-height: 21px;
-}
-
-body {
-    background: linear-gradient(180deg, #EAE9E8 0%, #EAE9E8 53.65%, #B4B4B4 100%);
-}
-
-.vet-big-text {
-    font-weight: 350;
-}
-
-.vet-big-text-rezo {
-    font-weight: normal;
 }
 
  .nav-btn {
@@ -30,12 +30,19 @@ body {
     border-color: #FFFDF8;
 }
 
+// Общий класс
+.vet-big-text {
+    font-weight: 350;
+}
+
+// Общий класс
 .btn-primary {
     color: #3D3A3A;
     background-color: #FFFDF8;
     border-color: #FFFDF8;
 }
 
+// Общий класс (отступ на всех страницах от навигации)
 .space-75 {
     height: 75px;
 }
@@ -48,29 +55,34 @@ body {
     height: 248px;
 }
 
+// Только в index
 .vet-feature-text {
+    font-size: 24px;
     font-weight: 300;
     margin-top: 26px;
 }
 
+// Только в index
 .vet-button {
-    width: 300px;
-    height: 48px;
-    margin-top: 126px;
-    margin-bottom: 24px;
-    font-size: 18px;
-    padding-top: 9px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    width: 304px;
+    height: 50px;
+    margin-top: 85px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding-top: 12px;
+    box-shadow: 0px 13px 32px rgba(0, 0, 0, 0.13);
+    border-radius: 18px;
 }
 
+// Только в index
 .vet-find-clinic-link {
-    color: black;
+    color: #3D3A3A;
     text-decoration: underline;
     margin-left: 5px;
     font-size: 18px;
 }
 
+// Только в index
 .vet-map-pin {
     margin-left: 20px;
     margin-bottom: 5px;
