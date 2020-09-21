@@ -10,26 +10,6 @@ body {
     font-family: $font-stack;
 }
 
-.brand-vetclinic {
-    font-weight: 400;
-    margin-left: 24px;
-}
-
-.header-btn {
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.btn-navigation {
-    @extend .vet-btn-color;
-    width: 132px;
-    height: 36px;
-    margin-left: 10px;
-    font-size: 18px;
-    border-radius: 18px;
-    text-align: center;
-}
-
 // Общий класс
 .vet-big-text {
     font-weight: 350;
