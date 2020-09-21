@@ -20,16 +20,14 @@ body {
     line-height: 21px;
 }
 
-.nav-btn {
+.btn-navigation {
+    @extend .vet-btn-color;
     width: 132px;
     height: 36px;
     margin-left: 9px;
     font-size: 18px;
     border-radius: 18px;
     text-align: center;
-    color: #3D3A3A;
-    background-color: #FFFDF8;
-    border-color: #FFFDF8
 }
 
 // Общий класс
@@ -38,10 +36,15 @@ body {
 }
 
 // Общий класс
-.btn-primary {
+.vet-btn-color {
     color: #3D3A3A;
     background-color: #FFFDF8;
     border-color: #FFFDF8;
+}
+
+// Общий класс
+.btn-primary {
+    @extend .vet-btn-color;
 }
 
 // Общий класс (отступ на всех страницах от навигации)
