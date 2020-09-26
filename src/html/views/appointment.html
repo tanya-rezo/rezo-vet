@@ -132,14 +132,6 @@
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    document.getElementById("send-btn").addEventListener("click", function() {
-        if (document.getElementById("firstName").value == "" || document.getElementById("phoneNumber").value == "") {
-            window.location.assign("error.html");
-        } else {
-            window.location.assign("success.html");
-        }
-    });
-</script>
+<script src="/src/js/form-validation.js"></script>
 
 <%= _.template(require('./../includes/footer.html').default)(data) %>
