@@ -37,3 +37,10 @@
     text-align: center;
     box-shadow: 0px 13px 32px rgba(0, 0, 0, 0.13);
 }
+
+@include media-breakpoint-down(md) {
+    .nav-item { 
+        width: 100%;
+        text-align: center;
+    }
+  }
