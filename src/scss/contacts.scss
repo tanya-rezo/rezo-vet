@@ -4,6 +4,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 22px;
 }
 
 .cont-text {
@@ -40,4 +41,8 @@
 
 .doggo-tilt {
     transform: rotate(5.44deg);
+}
+
+.search-box{
+    display: flex;  
 }
