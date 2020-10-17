@@ -27,17 +27,19 @@
     text-align: center;
 }
 
-.search-box{
+.search-box {
     display: flex;  
 }
 
 .cont-search-field {
-    /*    width: 980px !important; */
-    margin-right: 12px;
+    margin-right: 14px;
+    border-radius: 5px;
+    border: 0.25px solid #8D8D8D;
 }
 
 .cont-search-btn {
-    width: 115px;
+    width: 166px;
+    border-radius: 5px;
 }
 
 .cont-map {
