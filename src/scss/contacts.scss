@@ -34,12 +34,11 @@
 .cont-search-field {
     margin-right: 14px;
     border-radius: 5px;
-    border: 0.25px solid #8D8D8D;
 }
 
 .cont-search-btn {
+    @extend .btn-primary;
     width: 166px;
-    border-radius: 5px;
 }
 
 .cont-map {
