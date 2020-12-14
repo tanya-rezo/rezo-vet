@@ -5,17 +5,16 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-6">
-            <div class="space-248"></div>
-            <img src="img/app-cato.png">
+        <div class="col-6 vh-center">
+            <img class="app-cato" src="img/app-cato.png">
         </div>
         <div class="col-6">
-            <div class="space-75"></div>
+            <div class="space-35"></div>
             <h1><span class="vet-big-text">Запись на приём</span></h1>
             <div class="space-22"></div>
             
             <div class="row">
-                <div class="col-4">
+                <div class="col-6">
                     <div class="form-group">
                         <label for="animalType">Вид*</label>
                         <select class="form-control" id="animalType">
@@ -26,13 +25,31 @@
                             </select>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-6">
                     <div class="form-group">
                         <label for="breed">Порода</label>
                         <input type="text" class="form-control" id="breed">
                     </div>
                 </div>
-                <div class="col-2">
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="petName">Кличка (пациента)</label>
+                        <input type="text" class="form-control" id="petName">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="no-wrap" for="lastVisit">Последний поход к ветеринару</label>
+                        <input type="date" class="form-control" id="lastVisit">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
                     <div class="form-group">
                         <label for="sex">Пол*</label>
                         <select class="form-control" id="sex">
@@ -42,7 +59,7 @@
                             </select>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-6">
                     <div class="form-group">
                         <label class="no-wrap" for="age">Возраст (лет)</label>
                         <input type="number" class="form-control" id="age" min="0">
@@ -50,20 +67,6 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-4">
-                    <div class="form-group">
-                        <label for="petName">Кличка (пациента)</label>
-                        <input type="text" class="form-control" id="petName">
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="form-group">
-                        <label class="no-wrap" for="lastVisit">Последний поход к ветеринару</label>
-                        <input type="date" class="form-control" id="lastVisit">
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
@@ -98,13 +101,6 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <textarea class="form-control" id="Comment" rows="4" placeholder="Комментарий"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-6">
                     <div class="form-group">
                         <input type="text" class="form-control" id="firstName" placeholder="Имя*">
@@ -125,6 +121,13 @@
                 <div class="col-6">
                     <div class="form-group">
                         <input type="email" class="form-control" id="Email" placeholder="Email">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <textarea class="form-control" id="Comment" rows="4" placeholder="Комментарий"></textarea>
                     </div>
                 </div>
             </div>

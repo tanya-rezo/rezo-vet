@@ -1,7 +1,12 @@
-//Класс переделать в модификацию общего класса для всех кнопок
 .app-btn {
     @extend .btn-primary;
     width: 100%;
-    margin-bottom: 150px;
-    margin-top: 15px;
+    margin-bottom: 42px;
+    margin-top: 10px;
+}
+
+.app-cato {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
 }

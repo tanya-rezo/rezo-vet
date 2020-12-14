@@ -5,6 +5,7 @@
 }
 
 .vet-button {
+    @extend .btn-primary;
     width: 304px;
     height: 50px;
     margin-top: 85px;
