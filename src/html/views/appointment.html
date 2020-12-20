@@ -51,13 +51,16 @@
             <div class="row">
                 <div class="col-6">
                     <div class="form-group">
-                        <label for="sex">Пол*</label>
-                        <select class="form-control" id="sex">
-                            <option></option>
-                            <option>М</option>
-                            <option>Ж</option>
-                            </select>
+                        <label class="no-wrap" for="gender">Пол*</label>
                     </div>
+                    <div class="btn-group btn-group-toggle btn-switch-container" data-toggle="buttons">
+                        <label class="btn btn-switch active">
+                          <input type="radio" name="options" id="option1" checked> Мальчик
+                        </label>
+                        <label class="btn btn-switch">
+                          <input type="radio" name="options" id="option2"> Девочка
+                        </label>
+                      </div>
                 </div>
                 <div class="col-6">
                     <div class="form-group">
