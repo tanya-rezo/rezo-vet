@@ -13,11 +13,10 @@
 
 .btn-switch-container {
     width: 100%;
-    height: 40px;
+    height: $input-height;
     margin-top: -20px;
     border: 3px solid #C9C8C8;
     border-radius: 0.25rem;
-
 }
 
 .btn-switch {
@@ -25,10 +24,17 @@
     background-color: #C9C8C8;
     border-color: #C9C8C8;
     border-radius: 0rem;
+    border-width: 0px;
+}
+
+.btn-switch.focus, .btn-switch:focus {
+    box-shadow: none;
 }
 
 .btn-switch:not(:disabled):not(.disabled).active {
     color: #212529;
     background-color: #fff;
     border-color: #fff;
+    border-radius: 0.25rem;
+    border-width: 0px;
 }
