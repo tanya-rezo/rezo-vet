@@ -41,3 +41,22 @@
 .cont-map {
     margin-top: 13px;
 }
+
+.glasses {
+    opacity: .7;
+    position: absolute;
+    left: 94px;
+    top: 64px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        top: -1000px;
+    }
+
+    to {
+        top: 64px;
+    }
+}
