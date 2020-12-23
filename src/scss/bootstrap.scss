@@ -2,9 +2,7 @@ $primary: #8887D8;
 
 $input-btn-focus-color: #8887D8;
 $input-focus-border-color: #8887D8;
-//$custom-control-indicator-checked-color: #8887D8;
 $custom-control-indicator-checked-bg : #8887D8;
-//$component-active-bg: #8887D8;
-//$component-active-color: #8887D8;
+$input-btn-focus-width:       .1rem !default;
 
 @import "~bootstrap/scss/bootstrap";
