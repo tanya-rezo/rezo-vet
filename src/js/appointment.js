@@ -33,3 +33,14 @@ if (age_btn_plus != null) {
         input.value = age;
     });
 }
+
+var dropdowns = document.getElementsByClassName("dropdown");
+for (var dropdown of dropdowns) {
+    var button = dropdown.children[0];
+    var items = dropdown.children[1].children;
+    for (var item of items) {
+        item.addEventListener("click", function() {
+            button.innerHTML = this.innerHTML;
+        });
+    }
+}

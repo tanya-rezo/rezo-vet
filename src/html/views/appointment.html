@@ -17,12 +17,15 @@
                 <div class="col-6">
                     <div class="form-group">
                         <label for="animalType">Вид*</label>
-                        <select class="form-control" id="animalType">
-                            <option></option>
-                            <option>Кот</option>
-                            <option>Собака</option>
-                            <option>Другой</option>
-                            </select>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle vet-dropdown" type="button" id="animalType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu vet-dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Кот</a>
+                              <a class="dropdown-item" href="#">Собака</a>
+                              <a class="dropdown-item" href="#">Другой</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6">
@@ -90,16 +93,19 @@
                 <div class="col-12">
                     <div class="form-group">
                         <label for="VizitReason">Причина обращения*</label>
-                        <select class="form-control" id="VizitReason">
-                            <option></option>
-                            <option>Общая консультация</option>
-                            <option>Лаб. исследования</option>
-                            <option>Стоматология</option>
-                            <option>Чипирование</option> 
-                            <option>Вакцинация</option>
-                            <option>Груминг</option>                               
-                            <option>Другая</option>
-                            </select>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle vet-dropdown" type="button" id="vizitReason" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu vet-dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Общая консультация</a>
+                                <a class="dropdown-item" href="#">Лаб. исследования</a>
+                                <a class="dropdown-item" href="#">Стоматология</a>
+                                <a class="dropdown-item" href="#">Чипирование</a>
+                                <a class="dropdown-item" href="#">Вакцинация</a>
+                                <a class="dropdown-item" href="#">Груминг</a>
+                                <a class="dropdown-item" href="#">Другая</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

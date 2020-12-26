@@ -1,7 +1,7 @@
 import jQuery from "jquery";
 import popper from "popper.js";
 import bootstrap from "bootstrap";
-import "./form-validation";
+import "./appointment";
 
 
 // jQuery(function() {
