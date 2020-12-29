@@ -3,15 +3,15 @@
 }; %>
 <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container">
+<div class="container flex-container">
     <div class="row">
         <div class="col-6 vh-center">
             <img class="app-cato" src="img/app-cato.png">
         </div>
         <div class="col-6">
-            <div class="space-35"></div>
+            <div class="space-15"></div>
             <h1><span class="vet-big-text">Запись на приём</span></h1>
-            <div class="space-22"></div>
+            <div class="space-15"></div>
             
             <div class="row">
                 <div class="col-6">
@@ -152,7 +152,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="form-group">
-                        <textarea class="form-control" id="Comment" rows="3" placeholder="Комментарий"></textarea>
+                        <textarea class="form-control" id="Comment" rows="2" placeholder="Комментарий"></textarea>
                     </div>
                 </div>
             </div>
