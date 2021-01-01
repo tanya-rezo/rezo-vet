@@ -2,17 +2,20 @@
     position: relative;
     bottom: 0;
     width: 100%;
-    height: 44px;
     line-height: 44px;
     background-color: #E1E1E1;
 }
 
-.vk-logo {
-    margin-left: -45px;
-    margin-right: 568px;
+.footer-container {
+    display: flex;
+    flex-direction: row;
 }
 
-.cont-footer {
-    margin-left: 25px;
+.vk-logo {
+    margin-left: -33px;
+}
+
+.footer-contacts {
+    margin-left: auto;
     font-size: 14px;
 }
