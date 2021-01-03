@@ -2,10 +2,27 @@
     margin-bottom: -33px;
 }
 
+@include media-breakpoint-between(xs, md) {
+    .vet-logo {
+        margin-left: -21px;
+        width: 90px;
+        height: 105px;
+        margin-top: -10px;
+    }
+}
+
 .vet-brand {
     font-weight: 400;
     font-size: 30px;
     text-shadow: 0px 18px 30px rgba(0, 0, 0, 0.35);
+}
+
+@include media-breakpoint-between(xs, md) {
+    .vet-brand {
+        font-weight: 400;
+        font-size: 22px;
+        text-shadow: 0px 18px 30px rgba(0, 0, 0, 0.35);
+    }
 }
 
 // TODO Написать комментарий
