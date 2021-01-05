@@ -2,10 +2,8 @@
     font-size: 24px;
     font-weight: 300;
     margin-top: 26px;
-}
 
-@include media-breakpoint-between(xs, md) {
-    .vet-feature-text {
+    @include media-breakpoint-between(xs, md) {
         font-size: 18px;
         margin-top: 15px;
     }
@@ -21,14 +19,16 @@
     padding-top: 9px;
     box-shadow: 0px 13px 32px rgba(0, 0, 0, 0.13);
     border-radius: 18px;
-}
 
-@include media-breakpoint-between(xs, sm) {
-    .vet-button {
+    @include media-breakpoint-between(xs, md) {
         margin-top: 25px;
-        width: 100%;
+        width: 272px;
         height: 48px;
         font-size: 18px;
+    }
+
+    @include media-breakpoint-between(xs, sm) {
+        width: 100%;;
     }
 }
 
@@ -36,10 +36,12 @@
     margin-left: 16px;
     margin-right: 2px;
     margin-bottom: 5px;
-}
 
-@include media-breakpoint-between(xs, sm) {
-    .vet-map-pin {
+    @include media-breakpoint-only(md) {
+        margin-left: 2px;
+    }
+
+    @include media-breakpoint-between(xs, sm) {
         margin-left: 0;
     }
 }
@@ -48,10 +50,8 @@
     color: #3D3A3A;
     text-decoration: underline;
     font-size: 18px;
-}
 
-@include media-breakpoint-between(xs, sm) {
-    .vet-find-clinic-link {
+    @include media-breakpoint-between(xs, sm) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -60,4 +60,11 @@
 
 .vet-doggo-cato {
     margin-left: -100px;
+
+    @include media-breakpoint-between(xs, md) {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 29px;
+        margin-top: 19px;
+    }
 }
