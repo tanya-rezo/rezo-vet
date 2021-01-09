@@ -24,6 +24,10 @@ a {
 
 .vet-big-text {
     font-weight: 300;
+
+    @include media-breakpoint-between(xs, md) {
+        font-size: 28px;
+    }
 }
 
 .vet-btn-color {
