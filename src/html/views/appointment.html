@@ -1,168 +1,174 @@
-<% var data = {
-    title: "Запись",
-}; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data={ title: "Запись" , }; %>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container flex-container">
-    <div class="row">
-        <div class="col-6">
-            <img class="app-cato" src="img/app-cato.png">
-        </div>
-        <div class="col-6">
-            <div class="space-15"></div>
-            <h1><span class="vet-big-text">Запись на приём</span></h1>
-            <div class="space-15"></div>
-            
+        <div class="container flex-container">
             <div class="row">
                 <div class="col-6">
-                    <div class="form-group">
-                        <label for="animalType">Вид*</label>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle vet-dropdown" type="button" id="animalType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu vet-dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Кот</a>
-                              <a class="dropdown-item" href="#">Собака</a>
-                              <a class="dropdown-item" href="#">Другой</a>
-                            </div>
-                        </div>
-                    </div>
+                    <img class="app-cato" src="img/app-cato.png">
                 </div>
                 <div class="col-6">
-                    <div class="form-group">
-                        <label for="breed">Порода</label>
-                        <input type="text" class="form-control" id="breed">
-                    </div>
-                </div>
-            </div>
+                    <div class="space-15"></div>
+                    <h1><span class="vet-big-text">Запись на приём</span></h1>
+                    <div class="space-15"></div>
 
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label for="petName">Кличка (пациента)</label>
-                        <input type="text" class="form-control" id="petName">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <label class="no-wrap" for="lastVisit">Последний поход к ветеринару</label>
-                        <input type="date" class="form-control" id="lastVisit">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <label class="no-wrap" for="gender">Пол*</label>
-                    </div>
-                    <div class="btn-group btn-group-toggle btn-switch-container" data-toggle="buttons">
-                        <label class="btn btn-switch active">
-                          <input type="radio" name="options" id="option1" checked> Мальчик
-                        </label>
-                        <label class="btn btn-switch">
-                          <input type="radio" name="options" id="option2"> Девочка
-                        </label>
-                      </div>
-                </div>
-                <div class="col-6">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-6">
                             <div class="form-group">
-                                <label class="no-wrap" for="age-input">Возраст (лет)</label>
-                                <button id="age-btn-minus" type="button" class="btn btn-primary w-100">-</button>
+                                <label for="animalType">Вид</label>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle vet-dropdown" type="button" id="animalType"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu vet-dropdown-menu w-100"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Кот</a>
+                                        <a class="dropdown-item" href="#">Собака</a>
+                                        <a class="dropdown-item" href="#">Другой</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-6 p-0">
+                        <div class="col-6">
                             <div class="form-group">
-                                <label class="no-wrap" for="age">&nbsp;</label>
-                                <input type="number" class="form-control text-center" id="age-input" min="0" value="0">
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="form-group">
-                                <label class="no-wrap" for="age">&nbsp;</label>
-                                <button id="age-btn-plus" type="button" class="btn btn-primary w-100">+</button>
+                                <label for="breed">Порода</label>
+                                <input type="text" class="form-control" id="breed">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label for="VizitReason">Причина обращения*</label>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle vet-dropdown" type="button" id="vizitReason" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            </button>
-                            <div class="dropdown-menu vet-dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Общая консультация</a>
-                                <a class="dropdown-item" href="#">Лаб. исследования</a>
-                                <a class="dropdown-item" href="#">Стоматология</a>
-                                <a class="dropdown-item" href="#">Чипирование</a>
-                                <a class="dropdown-item" href="#">Вакцинация</a>
-                                <a class="dropdown-item" href="#">Груминг</a>
-                                <a class="dropdown-item" href="#">Другая</a>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="petName">Кличка (пациента)</label>
+                                <input type="text" class="form-control" id="petName">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="no-wrap" for="lastVisit">Последний поход к ветеринару</label>
+                                <input type="date" class="form-control" id="lastVisit">
                             </div>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label class="no-wrap" for="gender">Пол</label>
+                            </div>
+                            <div class="btn-group btn-group-toggle btn-switch-container" data-toggle="buttons">
+                                <label class="btn btn-switch active">
+                                    <input type="radio" name="options" id="option1" checked> Мальчик
+                                </label>
+                                <label class="btn btn-switch">
+                                    <input type="radio" name="options" id="option2"> Девочка
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label class="no-wrap" for="age-input">Возраст (лет)</label>
+                                        <button id="age-btn-minus" type="button"
+                                            class="btn btn-primary w-100">-</button>
+                                    </div>
+                                </div>
+                                <div class="col-6 p-0">
+                                    <div class="form-group">
+                                        <label class="no-wrap" for="age">&nbsp;</label>
+                                        <input type="number" class="form-control text-center" id="age-input" min="0"
+                                            value="0">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label class="no-wrap" for="age">&nbsp;</label>
+                                        <button id="age-btn-plus" type="button" class="btn btn-primary w-100">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="VizitReason">Причина обращения</label>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle vet-dropdown" type="button" id="vizitReason"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu vet-dropdown-menu w-100"
+                                        aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Общая консультация</a>
+                                        <a class="dropdown-item" href="#">Лаб. исследования</a>
+                                        <a class="dropdown-item" href="#">Стоматология</a>
+                                        <a class="dropdown-item" href="#">Чипирование</a>
+                                        <a class="dropdown-item" href="#">Вакцинация</a>
+                                        <a class="dropdown-item" href="#">Груминг</a>
+                                        <a class="dropdown-item" href="#">Другая</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="checkbox-container">Первичный приём
+                                    <input type="checkbox" id="firstVizit">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label class="checkbox-container">Животному сделаны обязательные прививки
+                                    <input type="checkbox" id="hasVaccines">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="firstName" placeholder="Имя*">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lastName" placeholder="Фамилия">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="tel" class="form-control" id="phoneNumber"
+                                    placeholder="Контактный телефон*">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="Email" placeholder="Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control" id="Comment" rows="2"
+                                    placeholder="Комментарий"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="send-btn" role="button" class="btn app-btn" href="#">Записаться</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label class="checkbox-container">Первичный приём
-                            <input type="checkbox" id="firstVizit">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <label class="checkbox-container">Животному сделаны обязательные прививки
-                            <input type="checkbox" id="hasVaccines">
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="firstName" placeholder="Имя*">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="lastName" placeholder="Фамилия">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="form-group">
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Контактный телефон*">
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="Email" placeholder="Email">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group">
-                        <textarea class="form-control" id="Comment" rows="2" placeholder="Комментарий"></textarea>
-                    </div>
-                </div>
-            </div>
-            <a id="send-btn" role="button" class="btn app-btn" href="#">Записаться</a>
         </div>
-    </div>
-</div>
 
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+        <%= _.template(require('./../includes/footer.html').default)(data) %>
