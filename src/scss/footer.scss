@@ -4,11 +4,19 @@
     width: 100%;
     line-height: 44px;
     background-color: #E1E1E1;
+
+    @include media-breakpoint-between(xs, sm) {
+        line-height: 30px;
+    }
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
+
+    @include media-breakpoint-between(xs, sm) {
+        flex-direction: column;
+    }
 }
 
 .vk-logo {
@@ -18,4 +26,8 @@
 .footer-contacts {
     margin-left: auto;
     font-size: 14px;
+
+    @include media-breakpoint-between(xs, sm) {
+        margin-left: 0;
+    }
 }
