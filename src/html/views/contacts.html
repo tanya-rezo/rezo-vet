@@ -1,53 +1,59 @@
-<% var data = {
-    title: "Контакты",
-}; %>
-<%= _.template(require('./../includes/header.html').default)(data) %>
+<% var data={ title: "Контакты" , }; %>
+    <%= _.template(require('./../includes/header.html').default)(data) %>
 
-<div class="container flex-container">
-    <div class="row">
-        <div class="col-6">
-            <div class="space-75"></div>
-            <p>Ветеринарные клиники оснащёны всем необходимым для оказания квалифицированной помощи. Современное диагностическое оборудование позволяет проводить комплексные исследования состояния здоровья. Все ветеринарные клиники предлагают широкий спектр услуг.</p>
-            <p>Для питомцев предусмотрен современный стационар с комфортабельными боксами. Наши сотрудники регулярно повышают квалификацию и являются высококлассными специалистами.</p>     
-            <p>Также предусмотрена специальная услуга – зоотакси, которая поможет осуществить максимально комфортную поездку в подходящее для вас время. Вблизи каждой ветеринарной клиники присутствует бесплатная парковка. Все это позволяет обеспечить высокий уровень обслуживания вас и ваших питомцев.</p>     
-        </div>
+        <div class="container flex-container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="h-75px"></div>
+                    <p>Ветеринарные клиники оснащёны всем необходимым для оказания квалифицированной помощи. Современное
+                        диагностическое оборудование позволяет проводить комплексные исследования состояния здоровья.
+                        Все ветеринарные клиники предлагают широкий спектр услуг.</p>
+                    <p>Для питомцев предусмотрен современный стационар с комфортабельными боксами. Наши сотрудники
+                        регулярно повышают квалификацию и являются высококлассными специалистами.</p>
+                    <p>Также предусмотрена специальная услуга – зоотакси, которая поможет осуществить максимально
+                        комфортную поездку в подходящее для вас время. Вблизи каждой ветеринарной клиники присутствует
+                        бесплатная парковка. Все это позволяет обеспечить высокий уровень обслуживания вас и ваших
+                        питомцев.</p>
+                </div>
 
-        <div class="col-2"></div>
+                <div class="col-2"></div>
 
-        <div class="col-4 doggo-tilt">
-            <img class="cont-doggo" src="img/cont-doggo.png">
-            <img class="glasses" src="img/sunglasses.png">
-            <div class="vh-center cont-card">
-                <div>
-                    <p>
-                        <span>Единый коллцентр</span>
-                        <br>
-                        <a href="tel:+78006485995">8-800-648-59-95</a>
-                        <span></span>
-                    </p>
-                    <p>
-                        <span>Служба поддержки</span>
-                        <br>
-                        <a href="mailto:support@rezo-clinic.ru">support@rezo-clinic.ru</a>
-                    </p>
+                <div class="col-4 doggo-tilt">
+                    <img class="cont-doggo" src="img/cont-doggo.png">
+                    <img class="glasses" src="img/sunglasses.png">
+                    <div class="vh-center cont-card">
+                        <div>
+                            <p>
+                                <span>Единый коллцентр</span>
+                                <br>
+                                <a href="tel:+78006485995">8-800-648-59-95</a>
+                                <span></span>
+                            </p>
+                            <p>
+                                <span>Служба поддержки</span>
+                                <br>
+                                <a href="mailto:support@rezo-clinic.ru">support@rezo-clinic.ru</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <p>Найти ближайшую клинику на карте:</p>
+                    <div class="search-box">
+                        <input class="form-control cont-search-field" placeholder="Введите адрес...">
+                        <button class="btn cont-search-btn">Найти</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col-6">    
-            <p>Найти ближайшую клинику на карте:</p>
-            <div class="search-box">
-                <input class="form-control cont-search-field" placeholder="Введите адрес...">
-                <button class="btn cont-search-btn">Найти</button>
-            </div>
+        <div>
+            <iframe class="cont-map"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A52c33eea804f339ec2a49b4a888368b0bd63ca9f446aa528bc4da6f3469a6457&amp;source=constructor"
+                width="100%" height="500" frameborder="0"></iframe>
         </div>
-    </div>
-</div>
 
-<div>
-    <iframe class="cont-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A52c33eea804f339ec2a49b4a888368b0bd63ca9f446aa528bc4da6f3469a6457&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
-</div>
-
-<%= _.template(require('./../includes/footer.html').default)(data) %>
+        <%= _.template(require('./../includes/footer.html').default)(data) %>
