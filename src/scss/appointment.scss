@@ -3,6 +3,14 @@
     width: 100%;
     margin-bottom: 41px;
     margin-top: 8px;
+
+    @include media-breakpoint-between(xs, md) {
+        margin-top: 0;
+        height: 48px;
+        padding-top: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
 }
 
 .app-cato {
