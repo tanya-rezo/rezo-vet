@@ -8,8 +8,15 @@
 .app-cato {
     width: 100%;
     height: auto;
-    max-width: 480px;
-    margin-top: 250px;
+
+    @include media-breakpoint-between(xs, md) {
+        margin-bottom: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 250px;
+        max-width: 480px;
+    }
 }
 
 .btn-switch-container {
