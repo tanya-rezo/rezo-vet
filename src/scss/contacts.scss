@@ -1,5 +1,7 @@
 .doggo-tilt {
-    transform: rotate(5.44deg);
+    @include media-breakpoint-up(lg) {
+        transform: rotate(5.44deg);
+    }
 }
 
 .cont-doggo {
@@ -14,7 +16,7 @@
 .cont-card {
     background-color: white;
     height: 207px;
-    width: 322px;
+    max-width: 322px;
     margin-top: -45px;
     margin-left: auto;
     margin-right: auto;
