@@ -5,19 +5,46 @@
 }
 
 .cont-doggo {
-    width: 217px;
+    background-image: url(/img/cont-doggo.png);
+    background-repeat: no-repeat;
+    background-size: 217px;
     height: 243px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 22px;
+    margin-left: calc(90% / 2 - 217px / 2);
+    position: absolute;
+    width: 217px;
+    margin-top: -400px;
+}
+
+.cont-doggo:before {
+    background-image: url(/img/sunglasses.png);
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: .7;
+    width: 115px;
+    height: 63px;
+    left: 10px;
+    top: 42px;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        top: -1000px;
+    }
+
+    to {
+        top: 42px;
+    }
 }
 
 .cont-card {
     background-color: white;
     height: 207px;
     max-width: 322px;
-    margin-top: -45px;
+    margin-top: 195px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 6px;
@@ -53,23 +80,4 @@
 .cont-map {
     margin-top: 13px;
     margin-bottom: -7px;
-}
-
-.glasses {
-    opacity: .7;
-    position: absolute;
-    left: 94px;
-    top: 64px;
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
-@keyframes slidein {
-    from {
-        top: -1000px;
-    }
-
-    to {
-        top: 64px;
-    }
 }
