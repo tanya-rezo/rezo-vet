@@ -19,15 +19,31 @@
     }
 }
 
-.vk-logo {
-    margin-left: -33px;
-}
-
 .footer-contacts {
     margin-left: auto;
     font-size: 14px;
 
     @include media-breakpoint-between(xs, sm) {
         margin-left: 0;
+    }
+}
+
+.vk-logo {
+    margin-left: -27px;
+}
+
+.instagram-logo {
+    margin-left: 11px;
+
+    @include media-breakpoint-between(xs, sm) {
+        margin-left: 18px;
+    }
+}
+
+.youtube-logo {
+    margin-left: 13px;
+
+    @include media-breakpoint-between(xs, sm) {
+        margin-left: 20px;
     }
 }
